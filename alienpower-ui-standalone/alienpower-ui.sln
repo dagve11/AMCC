@@ -1,0 +1,24 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 18
+VisualStudioVersion = 18.6.11828.311
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "alienpower-ui", "alienpower-ui\alienpower-ui.vcxproj", "{8B851325-4FA9-411E-9C63-DAC8178714C5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8B851325-4FA9-411E-9C63-DAC8178714C5}.Debug|x64.ActiveCfg = Debug|x64
+		{8B851325-4FA9-411E-9C63-DAC8178714C5}.Debug|x64.Build.0 = Debug|x64
+		{8B851325-4FA9-411E-9C63-DAC8178714C5}.Release|x64.ActiveCfg = Release|x64
+		{8B851325-4FA9-411E-9C63-DAC8178714C5}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6716A5C5-9340-4B61-A406-5DFBF0758445}
+	EndGlobalSection
+EndGlobal
