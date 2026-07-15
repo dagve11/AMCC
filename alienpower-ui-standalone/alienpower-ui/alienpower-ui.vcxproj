@@ -105,6 +105,13 @@
   <ItemGroup>
     <ClInclude Include="..\alienfan-SDK_v2\alienfan-SDK.h" />
     <ClInclude Include="..\alienfan-SDK_v2\alienfan-controls.h" />
+    <ClInclude Include="resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="alienpower-ui.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="amcc.ico" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

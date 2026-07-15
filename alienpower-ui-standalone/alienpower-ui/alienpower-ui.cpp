@@ -9,6 +9,7 @@
 #include <string>
 
 #include "alienfan-SDK.h"
+#include "resource.h"
 
 #pragma comment(lib, "PowrProf.lib")
 #pragma comment(lib, "wbemuuid.lib")
@@ -481,13 +482,17 @@ int APIENTRY WinMain(HINSTANCE hInstance, HINSTANCE, LPSTR, int nCmdShow) {
 
 	const wchar_t* className = L"AlienPowerSmallUI";
 	WNDCLASSEXW wc = { sizeof(WNDCLASSEXW) };
+	HICON appIcon = (HICON)LoadImageW(hInstance, MAKEINTRESOURCEW(IDI_APP_ICON),
+		IMAGE_ICON, 32, 32, LR_DEFAULTCOLOR);
+	HICON appIconSmall = (HICON)LoadImageW(hInstance, MAKEINTRESOURCEW(IDI_APP_ICON),
+		IMAGE_ICON, 16, 16, LR_DEFAULTCOLOR);
 	wc.lpfnWndProc = WindowProc;
 	wc.hInstance = hInstance;
 	wc.hCursor = LoadCursor(NULL, IDC_ARROW);
 	wc.hbrBackground = (HBRUSH)(COLOR_BTNFACE + 1);
 	wc.lpszClassName = className;
-	wc.hIcon = LoadIcon(NULL, IDI_APPLICATION);
-	wc.hIconSm = LoadIcon(NULL, IDI_APPLICATION);
+	wc.hIcon = appIcon ? appIcon : LoadIcon(NULL, IDI_APPLICATION);
+	wc.hIconSm = appIconSmall ? appIconSmall : wc.hIcon;
 
 	if (!RegisterClassExW(&wc))
 		return 1;
